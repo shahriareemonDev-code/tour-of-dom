@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Dom</title>
+</head>
+<body>
+    <header>
+        <h1 class="header">This is my header no banner</h1>
+    </header>
+    
+    <main>
+        <h1 class="h1">Welcome to my DOM</h1>
+        <ul>
+            <li>Emon</li>
+            <li>Mamun</li>
+            <li>AB Rahim</li>
+            <li>Anis</li>
+            <li>AL amin</li>
+        </ul>
+    </main>
+    <script> console.log('Hellow from inside js') 
+
+       const student = {
+        name: 'Abul Mia',
+        id: 121,
+        study: function (porachor) {
+            console.log('Tui to poros na', porachor);
+        }
+       }
+
+       //document.getElementsByTagName
+       const li = document.getElementsByTagName('li');
+       console.log(li)
+       for(const list of li) {
+        console.log(list.innerText);
+       }
+
+       //all h1 tags
+       const allHeadings = document.getElementsByTagName('h1');
+       console.log(allHeadings)
+       for(const heading of allHeadings) {
+        console.log(heading.innerText );
+       }
+
+    </script>
+
+    
+
+    <script src="js/hello.js"></script>
+</body>
+</html>
