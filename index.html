@@ -14,11 +14,11 @@
     <main>
         <h1 class="h1">Welcome to my DOM</h1>
         <ul>
-            <li>Emon</li>
-            <li>Mamun</li>
-            <li>AB Rahim</li>
-            <li>Anis</li>
-            <li>AL amin</li>
+            <li id="name">Emon</li>
+            <li class="frnd">Mamun</li>
+            <li class="frnd">AB Rahim</li>
+            <li class="frnd">Anis</li>
+            <li class="frnd">AL amin</li>
         </ul>
     </main>
     <script> console.log('Hellow from inside js') 
@@ -27,23 +27,25 @@
         name: 'Abul Mia',
         id: 121,
         study: function (porachor) {
-            console.log('Tui to poros na', porachor);
+            // console.log('Tui to poros na', porachor);
         }
-       }
-
-       //document.getElementsByTagName
-       const li = document.getElementsByTagName('li');
-       console.log(li)
-       for(const list of li) {
-        console.log(list.innerText);
        }
 
        //all h1 tags
        const allHeadings = document.getElementsByTagName('h1');
        console.log(allHeadings)
        for(const heading of allHeadings) {
-        console.log(heading.innerText );
+        // console.log(heading.innerText );
        }
+         const myName = document.getElementById('name');
+         console.log(myName.innerText);
+
+         //get element by class
+         const myFrnds = document.getElementsByClassName('frnd');
+          console.log(myFrnds);
+          for(const myFrnd of myFrnds) {
+            console.log(myFrnd.innerText);
+          }
 
     </script>
 
