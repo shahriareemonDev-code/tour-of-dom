@@ -25,3 +25,21 @@ ul.appendChild(li3);
 
 //3rd kaj holo append/add  kore deya
 mainContainer.appendChild(placeSection)
+
+
+//easier way to creat html or appendChild
+
+const bookStation = document.createElement('section')
+bookStation.innerHTML = `
+<h1> Books I need to read</h1>
+<p> there is many kind of books here. you can choose to read this every item of books.</p>
+<ul> 
+<li>golper boi</li>
+<li> vuter golpo</li>
+<li>mojar golpo</li>
+</ul>
+`
+
+//main container er vitor append child kore deya hoise...
+//main container ta agei creat kora hoisilo oporer dike
+mainContainer.appendChild(bookStation)
