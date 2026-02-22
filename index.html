@@ -5,21 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to Dom</title>
+    <style>
+    #width{
+        width: 80%;
+        margin: auto;
+    }
+   .phone-model{
+    background-color: skyblue;
+    border: 2px solid tomato;
+    :hover {
+        background-color: wheat;
+    }
+   }
+    </style>
 </head>
-<body>
+<body id="width">
     <header>
         <h1 class="header">This is my header no banner</h1>
     </header>
     
-    <main>
-        <h1 class="h1">Welcome to my DOM</h1>
-        <ul>
+    <main id="main-container">
+    <section>
+            <h1 class="h1">Welcome to my DOM</h1>
+        <ol id="we">
             <li id="name">Emon</li>
             <li class="frnd">Mamun</li>
             <li class="frnd">AB Rahim</li>
             <li class="frnd">Anis</li>
             <li class="frnd">AL amin</li>
-        </ul>
+        </ol>
+    </section>
+
+        <section id="phones">
+            <div class="phone-list">
+                <h1 class="aboutPhone">Phone are fire</h1>
+                <ul class="phone-model">
+                    <li class="sam">Samsung</li>
+                    <li class="app">Apple</li>
+                    <li class="mi">Xiaomi</li>
+                    <li class="vi">Vivo</li>
+                    <li>Oppo</li>
+                    <li>One plus</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <footer id="mobile-shop">This is Mobile shop
+             <ul class="shop">
+                <li>Mobile dokan</li>
+                <li>smart think</li>
+                <li>mobile club</li>
+                <li>gadget fair</li>
+            </ul>
+        </footer>
+        </section>
+       
     </main>
     <script> console.log('Hellow from inside js') 
 
@@ -47,10 +88,33 @@
             console.log(myFrnd.innerText);
           }
 
+          const myPhones = document.getElementById('phones');
+          console.log(myPhones.innerText);
+
+          
+           const phnModel = document.getElementsByClassName('sam');
+           console.log(phnModel);
+           for (phn of phnModel) {
+            console.log(phn.innerText);
+           }
+           
+           const ulElements = document.querySelectorAll('#phones ul');
+           for(ulItem of ulElements) {
+            console.log(ulItem.innerText)
+           }
+
+        //    const samSung = document.getElementsByClassName('sam');
+        //    for( samsung of samSung) {
+        //       console.log(samsung.innerText);
+        //    }
+           
+
+
     </script>
 
     
 
     <script src="js/hello.js"></script>
+    <script src="append.js"></script>
 </body>
 </html>

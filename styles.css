@@ -7,3 +7,19 @@
 li{
     text-decoration: none;
 }
+
+#we{
+    background-color: blueviolet;
+    border: 2px solid orange;
+    :hover{
+        background-color: brown;
+    }
+}
+
+.section-card{
+    background-color: red;
+    font: 700;
+    border: 5px solid;
+    padding: 20px;
+}
+
